@@ -1,16 +1,50 @@
-// import { useState } from 'react'
+import { useEffect, useState } from "react";
 import "./App.css";
 
-// import Loading from "./components/Loading/Loading";
+import Loading from "./components/Loading/Loading";
+import Tours from "./components/Tours/Tours";
+
+const url = "/api/react-tours-project";
 
 function App() {
-  // const [loading, setLoading] = useState(true);
-  // const []
+  // By default loading is true
+  const [loading, setLoading] = useState(true);
+  const [tours, setTours] = useState([]);
 
-  // if(loading){
-  //   return(<><main><Loading/></main></>)
-  // }
-  return <>Test</>;
+  const fetchTours = async () => {
+    // We again setting loading to true
+    setLoading(true);
+
+    try {
+      const res = await fetch(url);
+      const toursData = await res.json();
+      // console.log(toursData);
+      setLoading(false);
+      setTours(toursData);
+    } catch (err) {
+      setLoading(false);
+      console.log("Error:", err);
+    }
+  };
+
+  useEffect(() => {
+    fetchTours();
+  }, []);
+
+  if (loading) {
+    return (
+      <main>
+        <Loading />
+      </main>
+    );
+  }
+  return (
+    <>
+      <main>
+        <Tours tours={tours} />
+      </main>
+    </>
+  );
 }
 
 export default App;
