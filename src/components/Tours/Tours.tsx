@@ -1,7 +1,19 @@
+import React from "react";
 import Tour from "../Tour/Tour";
 
-const Tours = ({ tours }) => {
-  // All Tours component
+interface TourType {
+  id: string;
+  image: string;
+  info: string;
+  name: string;
+  price: string;
+}
+
+interface ToursProps {
+  tours: TourType[];
+}
+
+const Tours: React.FC<ToursProps> = ({ tours }) => {
   return (
     <section>
       <div className="title">
