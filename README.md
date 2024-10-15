@@ -1,4 +1,4 @@
-# Read more toggle
+# Tours Project and Read more toggle link
 
 Read more toggle link, example: blog posts, tour posts or any huge post that hide its content to short.
 
