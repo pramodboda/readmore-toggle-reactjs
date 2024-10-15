@@ -4,7 +4,11 @@ import "./App.css";
 import Loading from "./components/Loading/Loading";
 import Tours from "./components/Tours/Tours";
 
-const url = "/api/react-tours-project";
+// Use this for local testing:
+// const url = "/api/react-tours-project";
+
+// Use this for Production:
+const url = "https://course-api.com/react-tours-project";
 
 function App() {
   // By default loading is true
