@@ -4,15 +4,15 @@ import './App.css';
 import Loading from "./components/Loading/Loading";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
   // const []
 
-  if(loading){
-    return(<><main><Loading/></main></>)
-  }
+  // if(loading){
+  //   return(<><main><Loading/></main></>)
+  // }
   return (
     <>
-
+Test
     </>
   )
 }
