@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import './App.css';
+// import { useState } from 'react'
+import "./App.css";
 
-import Loading from "./components/Loading/Loading";
+// import Loading from "./components/Loading/Loading";
 
 function App() {
   // const [loading, setLoading] = useState(true);
@@ -10,11 +10,7 @@ function App() {
   // if(loading){
   //   return(<><main><Loading/></main></>)
   // }
-  return (
-    <>
-Test
-    </>
-  )
+  return <>Test</>;
 }
 
-export default App
+export default App;
