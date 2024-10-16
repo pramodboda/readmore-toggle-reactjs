@@ -10,6 +10,8 @@ import Tours from "./components/Tours/Tours";
 // Use this for Production:
 const url = "https://course-api.com/react-tours-project";
 
+// const localURL = "./data/data.json";
+
 function App() {
   // By default loading is true
   const [loading, setLoading] = useState(true);
