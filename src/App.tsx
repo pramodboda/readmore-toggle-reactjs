@@ -5,10 +5,10 @@ import Loading from "./components/Loading/Loading";
 import Tours from "./components/Tours/Tours";
 
 // Use this for local testing:
-// const url = "/api/react-tours-project";
+const url = "/api/react-tours-project";
 
 // Use this for Production:
-const url = "https://course-api.com/react-tours-project";
+// const url = "https://course-api.com/react-tours-project";
 
 // const localURL = "./data/data.json";
 

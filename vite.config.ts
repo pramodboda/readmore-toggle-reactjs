@@ -7,13 +7,13 @@ export default defineConfig({
   plugins: [react()],
 
   // Use a Local Proxy: If you don’t control the server, you can set up a local proxy to handle the CORS issue. In your vite.config.js, you can configure a proxy:
-  // server: {
-  //   proxy: {
-  //     "/api": {
-  //       target: "https://course-api.com",
-  //       changeOrigin: true,
-  //       rewrite: (path) => path.replace(/^\/api/, ""),
-  //     },
-  //   },
-  // },
+  server: {
+    proxy: {
+      "/api": {
+        target: "https://course-api.com",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
+  },
 });
