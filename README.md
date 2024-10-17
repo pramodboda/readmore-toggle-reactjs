@@ -2,6 +2,10 @@
 
 Read more toggle link, example: blog posts, tour posts or any huge post that hide its content to short.
 
+## Status:
+
+Project not completed at production - CORS Issue
+
 ## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
